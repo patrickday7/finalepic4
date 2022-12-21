@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
+const http = require('http');
+const port = process.env.PORT || 3000;
 
-<h2>My First Web Page</h2>
-<p>My first paragraph.</p>
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  const msg = 'Hello Node!\n'
+  res.end(msg);
+});
 
-<p>Never call document.write after the document has finished loading.
-It will overwrite the whole document.</p>
-
-<script>
-document.write(5 + 6);
-</script>
-
-</body>
-</html> 
+server.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}/`);
+});

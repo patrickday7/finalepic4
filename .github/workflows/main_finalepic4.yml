@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Finalepic4'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_16A0CBA76D924F7C9AF0E5177745929B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7377E6DAE9CD41C9B391DB0C13FF31A2 }}
           package: .

@@ -6,6 +6,9 @@ const server = http.createServer((req, res) => {
   const msg = 'Hello Node!\n'
   res.end(msg);
 });
+npm install
+npm run build --if-present
+npm run test --if-present
 
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
